@@ -1,1 +1,13 @@
-pip install streamlit langchain langchain-community sentence-transformers faiss-cpu pypdf python-dotenv
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-classic
+langchain-huggingface
+pypdf
+sentence-transformers
+faiss-cpu
+python-dotenv
