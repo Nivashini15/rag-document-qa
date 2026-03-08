@@ -11,8 +11,9 @@ def setup_qa_chain(vector_db):
     print("🧠 Connecting to the Large Language Model...")
     
     # 1. Back to the reliable Mistral model!
+    # Swapped to Qwen2.5 for better free-tier cloud support!
     llm = HuggingFaceEndpoint(
-        repo_id="mistralai/Mistral-7B-Instruct-v0.2",
+        repo_id="Qwen/Qwen2.5-7B-Instruct",
         max_new_tokens=512,
         temperature=0.3,
         huggingfacehub_api_token=os.environ.get("HF_TOKEN")
